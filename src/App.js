@@ -2,15 +2,25 @@
 import React from "react";
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import HomeComponent from "./components/HomeComponent";
-import TaskBoard from "./components/TaskBoard";
+import TaskBoard from "./components/TaskBoard/TaskBoard";
+import LandingPage from "./components/LandingPage/LandingPage";
+import MailPage from "./components/MailPage/Mailpage";
+import MessagePage from "./components/MessageBoard/MessageBoard";
+import MeetingsPage from "./components/MeetingsPage/MeetingsPage";
+import AnalyticsPage from "./components/AnalyticsPage/AnalyticsPage";
+import SettingsPage from "./components/SettingsPage/SettingsPage";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<HomeComponent />}></Route>
+        <Route path="/" element={<LandingPage />}></Route>
         <Route path="/taskboard" element={<TaskBoard />}></Route>
+        <Route path="/mail" element={<MailPage />}></Route>
+        <Route path="/messages" element={<MessagePage />}></Route>
+        <Route path="/meetings" element={<MeetingsPage />}></Route>
+        <Route path="/analytics" element={<AnalyticsPage />}></Route>
+        <Route path="/settings" element={<SettingsPage />}></Route>
       </Routes>
     </BrowserRouter>
   );
