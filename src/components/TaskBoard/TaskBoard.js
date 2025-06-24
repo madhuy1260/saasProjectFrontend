@@ -5,7 +5,7 @@ import UnderConstruction from "../UnderConstructionPage/UnderConstruction";
 
 function TaskBoard() {
   return (
-    <div className="App">
+    <div className="App tasks-wrapper ">
       {/* <UnderConstruction /> */}
       <Board />
     </div>

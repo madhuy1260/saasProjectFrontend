@@ -15,20 +15,22 @@ const LandingPage = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="container text-center mt-5">
-      <h1 className="mb-4">SaaS Workspace</h1>
-      <div className="row justify-content-center">
-        {modules.map((module, index) => (
-          <div key={index} className="col-md-3 col-sm-6 mb-4">
-            <div
-              className="module-card p-4 shadow-sm"
-              onClick={() => navigate(module.route)}
-            >
-              <div className="module-icon">{module.icon}</div>
-              <div className="module-name mt-2">{module.name}</div>
+    <div className="landing-wrapper  ">
+      <div className="container text-center">
+        <h1 className="mb-4 pt-5">SaaS Workspace</h1>
+        <div className="row justify-content-center">
+          {modules.map((module, index) => (
+            <div key={index} className="col-md-3 col-sm-6 mb-4">
+              <div
+                className="module-card p-4 shadow-sm"
+                onClick={() => navigate(module.route)}
+              >
+                <div className="module-icon">{module.icon}</div>
+                <div className="module-name mt-2">{module.name}</div>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   );
