@@ -1,0 +1,117 @@
+.gmail-wrapper {
+  font-family: Arial, sans-serif;
+}
+
+.gmail-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f2f2f2;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+.logo span {
+  color: #db4437;
+}
+
+.search-bar {
+  width: 40%;
+  padding: 6px 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.gmail-body {
+  display: flex;
+}
+
+.sidebar {
+  width: 200px;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.compose {
+  width: 100%;
+  padding: 10px;
+  background: #d93025;
+  color: white;
+  border: none;
+  margin-bottom: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+}
+
+.nav-list li {
+  padding: 8px 5px;
+  cursor: pointer;
+}
+
+.nav-list li.active {
+  background: #fce8e6;
+  font-weight: bold;
+}
+
+.email-list {
+  flex: 1;
+  padding: 20px;
+}
+
+.email-controls {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.emails {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.email-item {
+  display: grid;
+  grid-template-columns: 30px 30px 150px 1fr 80px;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+}
+
+.email-item:hover {
+  background-color: #f9f9f9;
+}
+
+.sender {
+  font-weight: bold;
+}
+
+.subject {
+  color: #333;
+  font-size: 14px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

@@ -1,0 +1,174 @@
+.app-container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  background-color: #181818;
+  color: white;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #1e1e1e;
+}
+.sidebar {
+  width: 280px;
+  background-color: #111111;
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 1rem;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.menu-section .btn {
+  display: block;
+  width: 100%;
+  margin-bottom: 5px;
+  background: #222;
+  color: #ccc;
+  border: none;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+.selected {
+  background-color: #333 !important;
+  color: white;
+}
+
+.contacts ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 8px 0;
+  padding: 6px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.avatar-circle {
+  width: 30px;
+  height: 30px;
+  background-color: grey;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  font-weight: bold;
+  color: white;
+}
+
+.blue {
+  background-color: #0078d4;
+}
+.red {
+  background-color: #d83b01;
+}
+
+.subtext {
+  font-size: 12px;
+  color: #aaa;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background: #1c1c1c;
+  border-bottom: 1px solid #333;
+  align-items: center;
+}
+
+.header-left h5 {
+  margin: 0;
+  color: #fff;
+}
+
+.header-left .subtext {
+  font-size: 13px;
+  color: #aaa;
+}
+
+.header-tabs {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.tab {
+  padding: 6px 12px;
+  cursor: pointer;
+  color: #ccc;
+}
+
+.tab.selected {
+  background-color: #333;
+  border-radius: 6px;
+  border: 1px solid #444;
+  color: white;
+}
+
+.btn-meet {
+  background-color: #1cbf73;
+  color: white;
+  border: none;
+  padding: 0.4rem 1rem;
+  border-radius: 6px;
+  margin-right: 10px;
+}
+
+.meeting-panel {
+  flex: 1;
+  padding: 2rem;
+  text-align: center;
+}
+
+.btn-schedule {
+  background-color: transparent;
+  color: white;
+  border: 1px solid #555;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-bottom: 2rem;
+}
+
+.meeting-illustration img {
+  width: 80px;
+  margin-bottom: 1rem;
+}
+
+.meeting-illustration h4 {
+  margin: 10px 0;
+}
+
+.meeting-illustration p {
+  color: #aaa;
+  max-width: 500px;
+  margin: auto;
+}
+
+.info-box {
+  margin-top: 2rem;
+  font-size: 13px;
+  background: #222;
+  padding: 1rem;
+  border-radius: 5px;
+  color: #ccc;
+}
