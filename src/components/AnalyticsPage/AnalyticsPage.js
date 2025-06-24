@@ -1,9 +1,11 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import UnderConstruction from "../UnderConstructionPage/UnderConstruction";
 
 const AnalyticsPage = () => {
   return (
     <div className="container-fluid p-4">
+      <UnderConstruction />
       <h2 className="mb-4">Analytics Dashboard</h2>
 
       <div className="row">

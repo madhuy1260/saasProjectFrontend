@@ -11,21 +11,24 @@ import AnalyticsPage from "./components/AnalyticsPage/AnalyticsPage";
 import SettingsPage from "./components/SettingsPage/SettingsPage";
 import LoginPage from "./components/LoginPage/LoginPage";
 import RegisterPage from "./components/LoginPage/RegisterPage";
+import Layout from "./components/Layout";
 
 function App() {
   return (
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<LandingPage />}></Route>
-        <Route path="/taskboard" element={<TaskBoard />}></Route>
-        <Route path="/mail" element={<MailPage />}></Route>
-        <Route path="/messages" element={<MessagePage />}></Route>
-        <Route path="/meetings" element={<MeetingsPage />}></Route>
-        <Route path="/analytics" element={<AnalyticsPage />}></Route>
-        <Route path="/settings" element={<SettingsPage />}></Route>
-        <Route path="/login" element={<LoginPage />}></Route>
-        <Route path="/Register" element={<RegisterPage />}></Route>
-      </Routes>
+      <Layout>
+        <Routes>
+          <Route path="/" element={<LandingPage />}></Route>
+          <Route path="/taskboard" element={<TaskBoard />}></Route>
+          <Route path="/mail" element={<MailPage />}></Route>
+          <Route path="/messages" element={<MessagePage />}></Route>
+          <Route path="/meetings" element={<MeetingsPage />}></Route>
+          <Route path="/analytics" element={<AnalyticsPage />}></Route>
+          <Route path="/settings" element={<SettingsPage />}></Route>
+          <Route path="/login" element={<LoginPage />}></Route>
+          <Route path="/Register" element={<RegisterPage />}></Route>
+        </Routes>
+      </Layout>
     </BrowserRouter>
   );
 }

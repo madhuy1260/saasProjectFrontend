@@ -1,10 +1,12 @@
 // src/components/Mail/GmailReplica.js
 import React from "react";
 import "./Mailpage.css";
+import UnderConstruction from "../UnderConstructionPage/UnderConstruction";
 
 function MailPage() {
   return (
     <div className="gmail-wrapper">
+      <UnderConstruction />
       <header className="gmail-header ">
         <div className="logo">
           G<span>mail</span>
@@ -19,7 +21,6 @@ function MailPage() {
           />
         </div>
       </header>
-
       <div className="gmail-body  app-container">
         <aside className="sidebar">
           <button className="compose">COMPOSE</button>

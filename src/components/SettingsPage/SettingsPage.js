@@ -1,11 +1,12 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import UnderConstruction from "../UnderConstructionPage/UnderConstruction";
 
 const SettingsPage = () => {
   return (
     <div className="container p-4">
+      <UnderConstruction />
       <h2 className="mb-4">Settings</h2>
-
       <div className="card mb-3">
         <div className="card-header">Preferences</div>
         <div className="card-body">
@@ -40,7 +41,6 @@ const SettingsPage = () => {
           </div>
         </div>
       </div>
-
       <div className="card">
         <div className="card-header">Account</div>
         <div className="card-body">
