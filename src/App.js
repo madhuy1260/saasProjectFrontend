@@ -9,6 +9,8 @@ import MessagePage from "./components/MessageBoard/MessageBoard";
 import MeetingsPage from "./components/MeetingsPage/MeetingsPage";
 import AnalyticsPage from "./components/AnalyticsPage/AnalyticsPage";
 import SettingsPage from "./components/SettingsPage/SettingsPage";
+import LoginPage from "./components/LoginPage/LoginPage";
+import RegisterPage from "./components/LoginPage/RegisterPage";
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
         <Route path="/meetings" element={<MeetingsPage />}></Route>
         <Route path="/analytics" element={<AnalyticsPage />}></Route>
         <Route path="/settings" element={<SettingsPage />}></Route>
+        <Route path="/login" element={<LoginPage />}></Route>
+        <Route path="/Register" element={<RegisterPage />}></Route>
       </Routes>
     </BrowserRouter>
   );

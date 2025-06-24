@@ -3,7 +3,7 @@ import React from "react";
 
 const Sidebar = () => {
   return (
-    <div className="sidebar">
+    <div className="sidebar1">
       <div className="user-info">
         <img
           src="https://randomuser.me/api/portraits/women/1.jpg"
