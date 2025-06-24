@@ -1,19 +1,19 @@
 // src/App.js
-import React from 'react'
-import { useSelector, useDispatch } from 'react-redux'
-import { increment, decrement } from './features/counter/counterSlice'
+import React from "react";
+import "./App.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import HomeComponent from "./components/HomeComponent";
+import TaskBoard from "./components/TaskBoard";
 
 function App() {
-  const count = useSelector(state => state.counter.value)
-  const dispatch = useDispatch()
-
   return (
-    <div>
-      <h1>Counter: {count}</h1>
-      <button onClick={() => dispatch(increment())}>+</button>
-      <button onClick={() => dispatch(decrement())}>-</button>
-    </div>
-  )
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomeComponent />}></Route>
+        <Route path="/taskboard" element={<TaskBoard />}></Route>
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
