@@ -7,7 +7,7 @@ const SettingsPage = () => {
   return (
     <div className="settings-wrapper">
       <div className=" container p-4">
-        <UnderConstruction />
+        {/* <UnderConstruction /> */}
         <h2 className="mb-4">Settings</h2>
         <div className="card mb-3">
           <div className="card-header">Preferences</div>

@@ -9,7 +9,7 @@ import UnderConstruction from "../UnderConstructionPage/UnderConstruction";
 const MessagePage = () => {
   return (
     <div className="slack-app app-container">
-      <UnderConstruction />
+      {/* <UnderConstruction /> */}
       <Sidebar />
       <div className="main-content">
         <Header />

@@ -6,7 +6,7 @@ import UnderConstruction from "../UnderConstructionPage/UnderConstruction";
 function MailPage() {
   return (
     <div className="gmail-wrapper">
-      <UnderConstruction />
+      {/* <UnderConstruction /> */}
       <header className="gmail-header ">
         <div className="logo">
           G<span>mail</span>
