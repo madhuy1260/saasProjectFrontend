@@ -1,6 +1,6 @@
-import axios from "axios";
-import * as Constants from "../Constants";
+import * as Constants from "../Constants/taskConstants";
 import { getTicketDetailsByTicketIDAction } from "../Actions/taskActions";
+import dummydata from "../../JSONData/dummy.json";
 
 export const getTicketDetailsByTicketIDApiCall = (info) => async (dispatch) => {
   dispatch(
@@ -12,31 +12,24 @@ export const getTicketDetailsByTicketIDApiCall = (info) => async (dispatch) => {
     )
   );
 
-  var data = {};
-  // data.username = info?.username;
-  // data.password = info?.password;
   let ticketId = 25;
 
   var config = {
     method: "get",
-    url: process.env.REACT_PUBLISHED_LINK + `/tasks/ticket/${ticketId}`,
+    url: dummydata,
     headers: { "Content-Type": "application/json" },
     // data: data,
   };
 
-  await axios(config)
+  await fetch(config)
     .then((response) => {
       dispatch(
         getTicketDetailsByTicketIDAction(
           Constants.GET_TICKET_DETAILS_BYTICKETID_SUCCESS,
-          response.data,
+          dummydata,
           "Ticket details Data Loaded Successfully!!",
           false
         )
-      );
-      console.log(
-        `Data from the API - GET_TICKET_DETAILS_BYTICKETID_SUCCESS`,
-        response.data
       );
     })
     .catch((error) => {
